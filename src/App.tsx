@@ -35,9 +35,9 @@ function App() {
                 <div className="todo-list w-full">
                   <div className="flex flex-col w-full">
                     <div className="todos w-full">
-                      {filteredTodosArray.map((todo) => (
+                      {filteredTodosArray.map((todo, ind: number) => (
                         <CheckBoxComponent
-                          key={todo.id}
+                          key={ind}
                           id={todo.id}
                           completed={todo.completed}
                           description={todo.description}

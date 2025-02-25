@@ -4,7 +4,7 @@ import '../css/CheckBoxComponent.css'
 
 interface checkBoxComponentProps {
   description?: string;
-  id: number;
+  id: string;
   completed: boolean;
   time: string;
 }
